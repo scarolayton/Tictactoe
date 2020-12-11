@@ -1,0 +1,184 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(https://images.pexels.com/photos/1293260/pexels-photo-1293260.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+#login {
+  width: 30%;
+  min-width: 250px;
+  margin-left: 100px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#login img {
+  margin-bottom: 80px;
+  position: absolute;
+  top: 20px;
+  border-radius: 50px;
+  max-width: 120px;
+}
+
+#login input {
+  width: 70%;
+  height: 30px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: black;
+  border-bottom: solid 1px #eee;
+  color: #fff;
+}
+
+#login h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 40px;
+}
+
+#login button {
+  width: 70%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 12px;
+  background-color: #900;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.juego {
+  margin-right: 250px;
+  width: 25%;
+  height: auto;
+}
+
+.button {
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+  background-color: #000;
+  -webkit-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+}
+
+.botonInitial {
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+  -webkit-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+  color: #900;
+  background-color: #900;
+  transition: 1s;
+}
+
+.botonJugador1 {
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+  background-color: #000;
+  -webkit-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #d77;
+  transition: 1s;
+}
+
+.botonJugador2 {
+  margin: 5px;
+  width: 90px;
+  height: 90px;
+
+  -webkit-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.75);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #7d7;
+
+  transition: 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .juego {
+    width: 35%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 525px) {
+  section {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  #login {
+    margin: auto;
+    height: 400px;
+  }
+  .juego {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    width: 85px;
+  }
+  .botonInitial {
+    width: 85px;
+  }
+  .botonJugador1 {
+    width: 85px;
+  }
+  .botonJugador2 {
+    width: 85px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .juego {
+    width: 89%;
+
+    margin-top: 50px;
+  }
+  .button {
+    width: 80px;
+  }
+  .botonInitial {
+    width: 80px;
+  }
+  .botonJugador1 {
+    width: 80px;
+  }
+  .botonJugador2 {
+    width: 80px;
+  }
+}
